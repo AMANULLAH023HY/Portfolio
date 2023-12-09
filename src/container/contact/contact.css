@@ -1,0 +1,113 @@
+.contactContent{
+    padding: 20px;
+}
+.contactContentHeaderText{
+    color: var(--yellow-theme-sub-text-color);
+    display: inline-block;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+
+}
+
+.contactContentHeaderText::before,
+.contactContentHeaderText::after{
+    position:absolute;
+    content: " ";
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+
+}
+
+.contactContentHeaderText::before{
+    left: 0;
+}
+.contactContentHeaderText::after{
+    right: 0;
+}
+
+.contactContentForm{
+    margin-top: 30px;
+}
+.contactContentFormWrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.contactContentFormWrapper div{
+    position: relative;
+}
+
+.contactContentFormWrapper div .inputName,.inputEmail,.inputDescription{
+    width: 100%;
+    border: 2px solid var(--yellow-theme-main-color);
+    padding: 16px 12px;
+    transition: all 0.5s ease;
+    position: relative;
+    background-color: transparent;
+    color: var(--yellow-theme-sub-text-color);
+
+}
+
+.contactContentFormWrapper div .nameLabel,.emailLabel,.descritionLabel{
+   font-weight: 500;
+   position: absolute;
+   top: 7px;
+   left: 12px;
+   transition: all 0.2s ease; 
+   color: var(--yellow-theme-sub-text-color);
+   font-size: 16px;
+}
+
+
+
+.contactContentFormWrapper div .nameLabel:focus,.emailLabel:focus,.descritionLabel:focus{
+   outline: none; 
+}
+
+.inputName:focus + .nameLabel,
+.inputName:valid + .nameLabel,
+.inputEmail:focus + .emailLabel,
+.inputEmail:valid + .emailLabel,
+.inputDescription:focus + .descritionLabel,
+.inputDescription:valid + .descritionLabel
+{
+    font-size: 18px;
+    top: -25px;
+    left: 0;
+
+
+}
+
+@media only screen and (max-width:768px) {
+.contactContentForm{
+text-align: center;
+}
+
+.contactContentFormWrapper{
+grid-template-columns: repeat(1,1fr);
+
+}
+
+    
+}
+
+
+
+.contactLink{
+    margin-top: 50px;
+}
+
+
+
+
+

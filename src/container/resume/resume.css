@@ -1,0 +1,312 @@
+/* .resume{
+    height: 100%;
+
+}
+.timeLine{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.timeLineExperience,.timeLineEducation{
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.timeLineEducationHeaderText{
+    display: inline-block;
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+
+}
+
+
+
+.timeLineEducationHeaderText::before,.timeLineEducationHeaderText::after{
+    position: absolute;
+    content: " ";
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+}
+.timeLineEducationHeaderText::before{
+    left: 0;
+}
+.timeLineEducationHeaderText::after{
+    right: 0;
+}
+
+
+
+
+.timeLineExperienceHeaderText{
+    display: inline-block;
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+
+}
+
+
+
+.timeLineExperienceHeaderText::before,.timeLineExperienceHeaderText::after{
+    position: absolute;
+    content: " ";
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+}
+.timeLineExperienceHeaderText::before{
+    left: 0;
+}
+.timeLineExperienceHeaderText::after{
+    right: 0;
+}
+
+
+.timeLineExperienceVerticalTimelineElement{
+    padding: 0px 0px 30px 0px;
+
+}
+.timeLineExperienceVerticalTimelineElement:last-child{
+    padding-bottom: 0px;
+}
+
+.verticalTimelineElementTitleWrapper{
+    display: flex;
+    align-items: center;
+}
+.verticalTimelineElementTitleWrapper h3,h4{
+    font-size: 14px;
+}
+
+.verticalTimelineElementTitleWrapper h4{
+    margin-left: 8px;
+}
+
+
+
+
+
+.vertical-timeline-element-content{
+    box-shadow: none;
+}
+.vertical-timeline-element-content-asrrow{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .timeLine {
+        flex-direction: column;
+    }
+
+.skillsContentWrapperInnerContent{
+    margin-bottom: 20px;
+}
+.timeLineExperience,.timeLineEducation{
+    width: 100%;
+}
+
+
+}
+
+ */
+
+.resumeDiv{
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 5%;
+}
+
+.resumeMe h2 {
+    font-size: 25px;
+    color: skyblue;
+    }
+
+    .resumeMe h3 {
+        font-size: 20px;
+        color: skyblue;
+        margin: 10px 0px;
+        }
+
+        .resumeMe p {
+            font-size: 15px;
+            color: gray;
+            margin-bottom: 20px;
+            }
+
+
+
+            .resumeContact{
+                margin: 10px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: skyblue;
+                gap: 10px;
+            }
+
+            .resumeContact span{
+                font-size: 15px;
+            }
+
+
+
+
+
+.resumeDetails{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.resumeDetailPartOne .resumeDetailEducatuion h2{
+    color: skyblue;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.resumeDetailPartOne .resumeDetailEducatuion h3,h4{
+    font-size: 15px;
+    color: gray;
+    
+
+}
+
+.resumeDetailPartOne .resumeDetailEducatuion h4{
+    margin-bottom: 10px;
+}
+
+.resumeDetailPartOne span{
+    color: gray;
+    font-size: 15px;
+}
+
+.resumeDetailEducatuion{
+    margin-top: 20px;
+}
+.resumeDetailEducatuion p{
+    color: gray;
+    font-size: 15px;
+    
+}
+
+.resumeDetailEducatuion ul{
+    list-style: none;
+    margin-right: 20px;
+}
+.resumeDetailEducatuion ul li span{
+    font-size: 30px;
+    margin-left: 5px;
+
+}
+
+.resumeDetailEducatuion ul li{
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 10px;
+    color: gray;
+
+}
+
+.resumeDetailLanguage{
+    margin-top: 20px;
+    color: skyblue;
+    font-size: 15px;
+}
+.resumeDetailLanguage span{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+.resumeDetailSkill h2{
+    color: skyblue;
+    font-size: 20px;
+    margin: 20px 10px 0 0;
+}
+
+.resumeDetailSkill button{
+    background-color: gray;
+    color: skyblue;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 5px;
+
+}
+
+.resumeDetailProject h2{
+    color: skyblue;
+    font-size: 20px;
+    margin-top: 10px;
+
+
+}
+
+.resumeDetailProject h3{
+    color: gray;
+    font-size: 20px;
+    margin: 10px 0;
+    
+    
+}
+
+.resumeDetailProject ul{
+    list-style: none;
+    margin-right: 20px;
+}
+
+
+.resumeDetailProject ul li span{
+    font-size: 30px;
+    margin-left: 5px;
+
+}
+
+.resumeDetailProject ul li{
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 10px;
+    color: gray;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div{
+    color: white;
+}

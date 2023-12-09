@@ -1,0 +1,157 @@
+.portfolioContent{
+    padding: 20px;
+    width: 100%;
+}
+.portfolioContentFilter{
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 1px dashed var(--yellow-theme-main-color);
+    height: 52px;
+}
+
+
+.portfolioContentFilter li{
+
+   font-size: 16px;
+   display: inline-block;
+   cursor: pointer;
+   position: relative;
+   color: var(--yellow-theme-main-color);
+  text-transform: uppercase;
+  padding: 20px;overflow: hidden;  
+  transition: all 0.5s ease;
+}
+
+.portfolioContentFilter .active{
+    background: var(--yellow-theme-main-color);
+    color: var(--yellow-theme-sub-text-color);
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.portfolioContentCard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-top: 10px;
+
+}
+
+.portfolioContentCardItem{
+    height: 366px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.portfolioContentCardItem:hover .overlay{
+   opacity: 1; 
+}
+
+
+.portfolioContentCardItemImageWrapper{
+    height: 100%;
+}
+.portfolioContentCardItemImageWrapper a{
+    height:100% ;
+}
+
+.portfolioContentCardItemImageWrapper a img{
+    height: inherit;
+    object-fit:fill;
+    margin-left: 10px;
+    width: 100%;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 4.5%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: var(--yellow-theme-main-color);
+}
+
+.overlayDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.overlayP{
+   color:#000000;
+   margin: 0px;
+   font-size: 4rem;
+   position: relative;
+   overflow: hidden;
+   white-space: nowrap;
+   animation:typingEffect 1s steps(30,end) ; 
+}
+
+.overlay button{
+    cursor: pointer;
+    margin-top: 16px;
+    padding: 10px 70px;
+    font-size: 2rem;
+    background: transparent;
+    color: #000;
+    border: 1.5px solid #000;
+    border-radius: 4px;
+    font-weight: 500;
+
+}
+
+@keyframes typingEffect {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:769px) {
+    .portfolioContentFilter>li{
+        font-size: 11px;
+    }
+    .portfolioContentCard{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media only screen and (max-width:1000px) {
+    .portfolioContentFilter>li{
+        font-size: 11px;
+    }
+    .portfolioContentCard{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    .portfolioContentFilter>li{
+        font-size: 11px;
+    }
+    .portfolioContentCard{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+
+
+
+
+
+
