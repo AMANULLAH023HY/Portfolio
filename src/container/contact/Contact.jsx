@@ -77,22 +77,22 @@ export default function Contact() {
 
 <div className='contactLink'>
 <a href="https://www.instagram.com/amanullah5414?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">
-        <FaInstagram size={70} />
+        <FaInstagram size={40} />
       </a>
 
 
 
       <a href="https://www.facebook.com/people/Aman-Ullah/pfbid0uyfmQwtGNRuC4TXJ44VDHNBhar1jfUzH19ojJm5zBGKEwo9DN2KuLDSZWDsKXmHYl/?mibextid=PzaGJu" target="_blank" >
-        <FaFacebook size={70} />
+        <FaFacebook size={40} />
       </a>
       <a href="mailto:amana170829@gmail.com">
-        <FiMail size={70} />
+        <FiMail size={40} />
       </a>
       
       <a href="https://www.linkedin.com/feed" target="_blank" >
-        <FaLinkedin size={70} />
+        <FaLinkedin size={40} />
       </a>
-      <a href='https://github.com/AMANULLAH023HY' target="_blank" ><FaGithub size={70} /> </a>
+      <a href='https://github.com/AMANULLAH023HY' target="_blank" ><FaGithub size={40} /> </a>
 </div>
 
 
